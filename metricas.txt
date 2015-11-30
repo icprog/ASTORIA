@@ -1,0 +1,30 @@
+nº amostras total: 30241
+
+strong ddos:
+verdadeiros negativos: 360 (100%)
+falsos negativos: 616
+verdadeiros positivos: 29265
+TVP: 97.938%
+TFN: 2.062%
+acc: 97.963%
+
+weak ddos:
+verdadeiros negativos: 360 (100%)
+falsos negativos: 630
+verdadeiros positivos: 29251
+TVP: 97.891%
+TFN: 2.109%
+acc: 97.916%
+
+size:
+
+30240
+
+verdadeiros negativos: 8640 (100%)
+falsos negativos: 597
+verdadeiros positivos: 21003
+TVP: 97.236%
+TFN: 2.764%
+acc: 98.026%
+
+
