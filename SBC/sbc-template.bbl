@@ -1,0 +1,153 @@
+\begin{thebibliography}{}
+
+\bibitem[Ali and Al-Shaer 2013]{aliprobabilistic}
+Ali, M. and Al-Shaer, E. (2013).
+\newblock Probabilistic model checking for ami intrusion detection.
+\newblock In {\em Smart Grid Communications (SmartGridComm), 2013 IEEE
+  International Conference on}, pages 468--473.
+
+\bibitem[Amin and Wollenberg 2005]{massoud2005toward}
+Amin, S. and Wollenberg, B. (2005).
+\newblock Toward a smart grid: power delivery for the 21st century.
+\newblock {\em Power and Energy Magazine, IEEE}, 3(5):34--41.
+
+\bibitem[Bou-Harb et~al. 2013]{harb2013communication}
+Bou-Harb, E., Fachkha, C., Pourzandi, M., Debbabi, M., and Assi, C. (2013).
+\newblock Communication security for smart grid distribution networks.
+\newblock {\em Communications Magazine, IEEE}, 51(1):42--49.
+
+\bibitem[Carcano et~al. 2011]{carcano2011multidim}
+Carcano, A., Coletta, A., Guglielmi, M., Masera, M., Fovino, I., and Trombetta,
+  A. (2011).
+\newblock A multidimensional critical state analysis for detecting intrusions
+  in {SCADA} systems.
+\newblock {\em Industrial Informatics, IEEE Transactions on}, 7(2):179--186.
+
+\bibitem[Chang and Lin 2011]{libsvm}
+Chang, C.-C. and Lin, C.-J. (2011).
+\newblock {LIBSVM}: A library for support vector machines.
+\newblock {\em ACM Transactions on Intelligent Systems and Technology}, 2:1 --
+  27.
+\newblock Software available at \url{http://www.csie.ntu.edu.tw/~cjlin/libsvm}.
+
+\bibitem[Cortes and Vapnik 1995]{cortes1995support}
+Cortes, C. and Vapnik, V. (1995).
+\newblock Support-vector networks.
+\newblock {\em Machine learning}, 20(3):273--297.
+
+\bibitem[Coutinho et~al. 2009]{coutinho2009anomaly}
+Coutinho, M., Lambert-Torres, G., da~Silva, L., Martins, H., Lazarek, H., and
+  Neto, J. (2009).
+\newblock Anomaly detection in power system control center critical
+  infrastructures using rough classification algorithm.
+\newblock In {\em Digital Ecosystems and Technologies, 2009. DEST 09. 3rd IEEE
+  International Conference on}, pages 733--738.
+
+\bibitem[Drias et~al. 2015]{drias2015taxonomy}
+Drias, Z., Serhrouchni, A., and Vogel, O. (2015).
+\newblock Taxonomy of attacks on industrial control protocols.
+\newblock In {\em Protocol Engineering (ICPE) and International Conference on
+  New Technologies of Distributed Systems (NTDS), 2015 International Conference
+  on}, pages 1--6.
+
+\bibitem[Ester et~al. 1998]{ester1998incremental}
+Ester, M., Kriegel, H.-P., Sander, J., Wimmer, M., and Xu, X. (1998).
+\newblock Incremental clustering for mining in a data warehousing environment.
+\newblock In {\em 24th VLDB Conference}, volume~98, pages 323--333. Citeseer.
+
+\bibitem[Fraley and Raftery 2002]{fraley2002model}
+Fraley, C. and Raftery, A.~E. (2002).
+\newblock Model-based clustering, discriminant analysis, and density
+  estimation.
+\newblock {\em Journal of the American statistical Association},
+  97(458):611--631.
+
+\bibitem[Hoffmann 2007]{hoffmann2007kernel}
+Hoffmann, H. (2007).
+\newblock Kernel {PCA} for novelty detection.
+\newblock {\em Pattern Recognition}, 40(3):863--874.
+
+\bibitem[Li et~al. 2012]{li2012securing}
+Li, X., Liang, X., Lu, R., Shen, X., Lin, X., and Zhu, H. (2012).
+\newblock Securing smart grid: cyber attacks, countermeasures, and challenges.
+\newblock {\em Communications Magazine, IEEE}, 50(8):38--45.
+
+\bibitem[McLaughlin et~al. 2012]{mclaughlinamids}
+McLaughlin, S., Holbert, B., Zonouz, S., and Berthier, R. (2012).
+\newblock Amids: A multi-sensor energy theft detection framework for advanced
+  metering infrastructures.
+\newblock In {\em Smart Grid Communications (SmartGridComm), 2012 IEEE Third
+  International Conference on}, pages 354--359.
+
+\bibitem[Nguyen and Armitage 2008]{nguyen2008survey}
+Nguyen, T. and Armitage, G. (2008).
+\newblock A survey of techniques for internet traffic classification using
+  machine learning.
+\newblock {\em Communications Surveys and Tutorials, IEEE}, 10(4):56--76.
+
+\bibitem[Rish 2001]{rish2001empirical}
+Rish, I. (2001).
+\newblock An empirical study of the naive bayes classifier.
+\newblock In {\em IJCAI 2001 workshop on empirical methods in artificial
+  intelligence}, volume~3, pages 41--46. IBM New York.
+
+\bibitem[Sayegh et~al. 2014]{2014temporalintrusion}
+Sayegh, N., Elhajj, I., Kayssi, A., and Chehab, A. (2014).
+\newblock Scada intrusion detection system based on temporal behavior of
+  frequent patterns.
+\newblock In {\em Mediterranean Electrotechnical Conference (MELECON), 2014
+  17th IEEE}, pages 432--438.
+
+\bibitem[Scholkopf and Smola 2001]{scholkopf2001svm}
+Scholkopf, B. and Smola, A.~J. (2001).
+\newblock {\em Learning with kernels: support vector machines, regularization,
+  optimization, and beyond}.
+\newblock MIT press.
+
+\bibitem[Tax and Duin 2004]{tax2004support}
+Tax, D.~M. and Duin, R.~P. (2004).
+\newblock Support vector data description.
+\newblock {\em Machine learning}, 54(1):45--66.
+
+\bibitem[Tsang and Kwong 2005]{tsang2005multi}
+Tsang, C.-H. and Kwong, S. (2005).
+\newblock Multi-agent intrusion detection system in industrial network using
+  ant colony clustering approach and unsupervised feature extraction.
+\newblock In {\em Industrial Technology, 2005. ICIT 2005. IEEE International
+  Conference on}, pages 51--56.
+
+\bibitem[Wagstaff et~al. 2001]{wagstaff2001constrained}
+Wagstaff, K., Cardie, C., Rogers, S., Schr{\"o}dl, S., et~al. (2001).
+\newblock Constrained k-means clustering with background knowledge.
+\newblock In {\em Eighteenth International Conference on Machine Learning},
+  volume~1, pages 577--584.
+
+\bibitem[Wermann et~al. 2016]{wermann2015astoria}
+Wermann, A.~G., Bortolozzo, M.~C., da~Silva, E.~G., Filho, A.~S., Gaspary,
+  L.~P., and Barcellos, M. (2016).
+\newblock Astoria: A framework for attack simulation and evaluation in smart
+  grids.
+\newblock In {\em Proceedings of the 15th IEEE/IFIP Network Operations and
+  Management Symposium (NOMS 2016)}, Istambul, Turkey.
+
+\bibitem[Yan et~al. 2013]{2013survey}
+Yan, Y., Qian, Y., Sharif, H., and Tipper, D. (2013).
+\newblock A survey on smart grid communication infrastructures: Motivations,
+  requirements and challenges.
+\newblock {\em Communications Surveys and Tutorials, IEEE}, 15(1):5--20.
+
+\bibitem[Yang et~al. 2013]{yang2013iecdetection}
+Yang, Y., McLaughlin, K., Littler, T., Sezer, S., Pranggono, B., and Wang, H.
+  (2013).
+\newblock Intrusion detection system for iec 60870-5-104 based scada networks.
+\newblock {\em Power and Energy Society General Meeting (PES), 2013 IEEE},
+  pages 1--5.
+
+\bibitem[Yang et~al. 2014]{2014multiattribute}
+Yang, Y., McLaughlin, K., Sezer, S., Littler, T., Im, E., Pranggono, B., and
+  Wang, H. (2014).
+\newblock Multiattribute scada-specific intrusion detection system for power
+  networks.
+\newblock {\em Power Delivery, IEEE Transactions on}, 29(3):1092--1102.
+
+\end{thebibliography}

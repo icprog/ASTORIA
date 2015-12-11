@@ -1,0 +1,56 @@
+# -*- Mode: python; py-indent-offset: 4; indent-tabs-mode: nil; coding: utf-8; -*-
+
+# def options(opt):
+#     pass
+
+# def configure(conf):
+#     conf.check_nonfatal(header_name='stdint.h', define_name='HAVE_STDINT_H')
+
+def build(bld):
+    module = bld.create_ns3_module('scada-application', ['core'])
+    module.source = [
+        'model/scada-application.cc',
+        'helper/scada-application-helper.cc',
+        'model/MTU.cc',
+        'model/RTU.cc',
+        'model/Sensor.cc',
+        'model/MSIAttacker.cc',
+        'model/DOSAttacker.cc',
+        'model/scada-protocol.cc',
+        'model/modbus-protocol.cc',
+        'model/mosaik-call.cc',
+        'model/ns3-simulation.cc',
+        'model/simulation-control.cc',
+        'model/topology.cc',
+        'model/transmission-data.cc',
+        ]
+
+    module_test = bld.create_ns3_module_test_library('scada-application')
+    module_test.source = [
+        'test/scada-application-test-suite.cc',
+        ]
+
+    headers = bld(features='ns3header')
+    headers.module = 'scada-application'
+    headers.source = [
+        'model/scada-application.h',
+        'helper/scada-application-helper.h',
+        'model/MTU.h',
+        'model/RTU.h',
+        'model/Sensor.h',
+        'model/MSIAttacker.h',
+        'model/DOSAttacker.h',
+        'model/scada-protocol.h',
+        'model/modbus-protocol.h',
+        'model/mosaik-call.h',
+        'model/ns3-simulation.h',
+        'model/simulation-control.h',
+        'model/topology.h',
+        'model/transmission-data.h',
+        ]
+
+    if bld.env.ENABLE_EXAMPLES:
+        bld.recurse('examples')
+
+    # bld.ns3_python_bindings()
+

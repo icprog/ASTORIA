@@ -1,0 +1,88 @@
+
+#ifndef TCP_SCADA_STATION_H
+#define TCP_SCADA_STATION_H
+
+#include "ns3/core-module.h"
+#include "ns3/network-module.h"
+#include "ns3/internet-module.h"
+#include "ns3/point-to-point-module.h"
+#include "ns3/applications-module.h"
+#include "ns3/ipv4-global-routing-helper.h"
+
+#include <sys/socket.h>
+#include "modbus-protocol.h"
+#include "scada-application.h"
+#include "transmission-data.h"
+
+// Usado na transmissao dos dados para o analizador
+#include <stdio.h>
+#include <string.h>
+
+#include <stdlib.h>
+#include <unistd.h>
+//#include <sys/types.h>
+#include <sys/socket.h>
+//#include <netinet/in.h>
+#include <arpa/inet.h>
+
+namespace ns3 {
+
+class Station: public ScadaApplication
+{
+public:
+	Station (Ptr<Socket> socket ,const Address &l, const Address &t, uint32_t nodeId, std::string nodeName,uint32_t interval,std::string Protocol);
+	virtual ~Station ();
+
+	void StartApplication (void);
+	void StopApplication (void);
+	void AddData(float data);
+
+	TransmissionData* getTransmissionData();
+
+	void AddSensorAddress(uint32_t id, std::string name, Address address);
+	Address GetStationAddress();
+	std::vector<std::pair<uint32_t, std::pair<std::string,Address>>> GetSensorAddress();
+	std::vector<TransmissionData*> getSensorData();
+	
+private:
+	void HandleRead(Ptr<Socket> socket);
+	void ReplyServer(std::string message);
+	void ScheduleNextDataInput();
+	void RecvInputData();
+	void RequestSensors();
+	void ScheduleNextTx();
+
+	Address server;
+	uint32_t m_interval;
+	Ptr<Socket> m_socket_server;
+	Ptr<Socket> m_socket_sensor_recv;
+	std::vector<std::pair<uint32_t, std::pair<std::string, Ptr<Socket>>>> m_socket_sensor_send;
+	std::vector<std::pair<uint32_t, std::pair<std::string, Ptr<Socket>>>> m_socket_sensor_receive;
+	std::vector<std::pair<uint32_t, std::pair<std::string,Address>>> sensorsAddress;
+	std::vector<TransmissionData*> sensorData;
+
+	std::vector<std::pair<uint32_t, uint32_t>> sensorRequestTime;
+	std::vector<std::pair<uint32_t, uint32_t>> bufferOverflowCounter;
+
+	std::vector<std::pair<uint32_t, std::pair<std::string, uint16_t>>> sensorLastData;
+
+	uint32_t m_packetsGet;
+	std::vector<uint8_t*>  m_dataList;
+	std::vector<uint32_t>  m_dataSizeList;
+	uint32_t m_functionCode;
+	uint32_t packetSizeSensors;
+	uint32_t packetsSentSensors;
+
+	std::vector<float> stationSendTime;
+	std::vector<uint16_t> stationSendData;
+
+	ScadaProtocol *messageProtocol;
+
+	uint32_t expectedDataCount;
+	EventId dataInputEvent;
+	EventId requestEvent;
+
+};
+
+}
+#endif

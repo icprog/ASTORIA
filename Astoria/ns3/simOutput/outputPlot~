@@ -1,0 +1,39 @@
+listRTU = system('ls RTU/')
+listMTU = system('ls MTU/')
+listRef = system('ls MTU/')
+system('mkdir -p plot/RTU')
+system('mkdir -p plot/MTU')
+system('mkdir -p plot/Reference')
+
+set terminal png
+set datafile sep ';'
+set xlabel "Time"
+set ylabel "Power"
+#set xrange [0:24*3600]
+set yrange [-4000:4000]
+set key left top
+
+
+find = "."
+
+do for [file in listRTU] {
+		S = strstrt(file,find)-1
+		set title sprintf('%s', file[0:S])
+    set output sprintf('plot/RTU/%s.png', file[0:S])
+    plot sprintf('RTU/%s', file) using 1:2 with steps title sprintf('%s', file[0:S])
+}
+
+do for [file in listMTU] {
+		S = strstrt(file,find)-1
+		set title sprintf('%s', file[0:S])
+    set output sprintf('plot/MTU/%s.png', file[0:S])
+    plot sprintf('MTU/%s', file) using 1:2 with steps title sprintf('%s', file[0:S])
+}
+
+do for [file in listRef] {
+		S = strstrt(file,find)-1
+		set title sprintf('%s', file[0:S])
+    set output sprintf('plot/Reference/%s.png', file[0:S])
+    plot sprintf('Reference/%s', file) using 1:2 with steps title sprintf('%s', file[0:S])
+}
+
